@@ -21,6 +21,7 @@
 
 - name: Update defaults.sh with replace_address option for Cassandra
   lineinfile:
+    backup: yes
     create: yes
     group: "{{ opdk_group_name }}"
     owner: "{{ opdk_user_name }}"
