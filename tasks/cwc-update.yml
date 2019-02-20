@@ -20,7 +20,7 @@
   when: cwc_property.file_name is not defined
 
 - name: Update defaults.sh with replace_address option for Cassandra
-  become_user: apigee
+  become: yes
   lineinfile:
     backup: yes
     create: yes
