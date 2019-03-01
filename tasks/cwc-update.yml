@@ -30,4 +30,4 @@
     state: present
     regexp: "^{{ cwc_property.key }}"
     line: '{{ cwc_property.key }}={{ cwc_property.value }}'
-    dest: "{{ apigee_home }}/customer/application/{{ cwc_property.file_name }}.properties"
+    dest: "{{ apigee_home | default('/opt/apigee') }}/customer/application/{{ cwc_property.file_name }}.properties"
