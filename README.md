@@ -30,7 +30,7 @@ Example Playbook
 
 Example playbook that updates CWC properties:
 
-    - hosts: servers
+    - hosts: pgmaster
       vars: 
       replication_string: "host    replication     apigee        10.142.0.32/32            trust"
       cwc_properties:
