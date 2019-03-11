@@ -1,41 +1,53 @@
-Role Name
+Apigee OPDK CWC Updates
 =========
 
-A brief description of the role goes here.
+This roles performs CWC updates to the Apigee Platform configuration. This role provides an interface
+based approach to updating CWC properties. 
 
 Requirements
 ------------
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+This role works with an instance of the Apigee platform. 
+
 
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+| Variable Name | Description |
+| --- | --- |
+| cwc_properties | The collection is expected to contain rows defined as follows: `- { key: '<key>', value: '<value>', file_name: '<filename>' }` |
+| opdk_user_name | The name of the apigee user on the system. Defaults to `apigee` |
+| opdk_group_name | The name of the apigee user on the system. Defaults to `apigee` |
+| apigee_home | The system path to the apigee installation home. Defaults to `/opt/apigee` |
 
 Dependencies
 ------------
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+N/A
 
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+Example playbook that updates CWC properties:
 
     - hosts: servers
+      vars: 
+      replication_string: "host    replication     apigee        10.142.0.32/32            trust"
+      cwc_properties:
+        - { key: 'conf_pg_hba_replication.connection', value: '{{ replication_string }}', file_name: 'postgresql' }
       roles:
-         - { role: username.rolename, x: 42 }
+         - { apigee-opdk-cwc-updates }
 
 License
 -------
 
-BSD
+Apache 2.0
 
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+Carlos Frias
+
 <!-- BEGIN Google Required Disclaimer -->
 
 # Not Google Product Clause
