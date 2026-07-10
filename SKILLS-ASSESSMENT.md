@@ -1,6 +1,6 @@
 # Skills Assessment — apigee-opdk-cwc-update
 
-> **Skill domain:** Apigee OPDK configuration management — idempotent property-file updates via the Customer-Writable Configuration (CWC) layer. Part of the broader Apigee platform-operations portfolio; see the [`bap_coe` portfolio hub →](https://github.com/carlosfrias/apigee-hybrid-workspace/blob/main/SKILLS-ASSESSMENT.md) for the full corpus.
+> **Skill domain:** Apigee OPDK configuration management — idempotent property-file updates via the Customer-Writable Configuration (CWC) layer. Part of the broader Apigee platform-operations portfolio; see the [`bap_coe` portfolio hub →](https://github.com/carlosfrias/apigee-hybrid-workspace/blob/master/SKILLS-ASSESSMENT.md) for the full corpus.
 
 ---
 
@@ -33,8 +33,8 @@ The expertise is not "editing properties files" — it is **designing a structur
 
 | Skill | Repository | Assessment |
 |-------|-----------|-----------|
-| Apigee Hybrid / K8s automation (collection) | [`apigee-hybrid-workspace`](https://github.com/carlosfrias/apigee-hybrid-workspace) | [SKILLS-ASSESSMENT.md →](https://github.com/carlosfrias/apigee-hybrid-workspace/blob/main/SKILLS-ASSESSMENT.md) ✅ portfolio hub |
-| Centralized defaults + runtime topology | [`apigee-opdk-setup-default-settings`](https://github.com/carlosfrias/apigee-opdk-setup-default-settings) | [SKILLS-ASSESSMENT.md →](https://github.com/carlosfrias/apigee-opdk-setup-default-settings/blob/main/SKILLS-ASSESSMENT.md) ✅ |
+| Apigee Hybrid / K8s automation (collection) | [`apigee-hybrid-workspace`](https://github.com/carlosfrias/apigee-hybrid-workspace) | [SKILLS-ASSESSMENT.md →](https://github.com/carlosfrias/apigee-hybrid-workspace/blob/master/SKILLS-ASSESSMENT.md) ✅ portfolio hub |
+| Centralized defaults + runtime topology | [`apigee-opdk-setup-default-settings`](https://github.com/carlosfrias/apigee-opdk-setup-default-settings) | [SKILLS-ASSESSMENT.md →](https://github.com/carlosfrias/apigee-opdk-setup-default-settings/blob/master/SKILLS-ASSESSMENT.md) ✅ |
 
 ---
 
