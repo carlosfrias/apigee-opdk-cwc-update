@@ -1,5 +1,8 @@
 # apigee-opdk-cwc-update — Apigee OPDK Customer-Writable Configuration Updates
 
+> 🔄 **Evolution note:** The automation approach from this OPDK-era role has been consolidated into the `apigee-hybrid-workspace` Ansible collection. See the successor capability in the portfolio hub: [`carlosfrias/apigee-hybrid-workspace`](https://github.com/carlosfrias/apigee-hybrid-workspace) → `bap_coe/private_cloud/` and `bap_coe/apigee_hybrid/`. The collection README explains each role group’s business value and production context.
+
+
 > **An Ansible role that applies property overrides to Apigee Edge Private Cloud component `.properties` files under `/opt/apigee/customer/application/` — the supported interface for persisting configuration changes across upgrades.**
 
 > [!NOTE]
